@@ -802,8 +802,6 @@ function loginHelper(appState, Cookie, email, password, globalOptions, callback)
           if (raw) mqttEndpoint = raw.replace(/\\\//g, "/");
           region = parseRegion(html);
           const rinfo = REGION_MAP.get(region);
-          if (rinfo) logger(`Server region ${region} - ${rinfo.name}`, "info");
-          else logger(`Server region ${region}`, "info");
         } catch {
           logger("Not MQTT endpoint", "warn");
         }
@@ -811,7 +809,7 @@ function loginHelper(appState, Cookie, email, password, globalOptions, callback)
           const userDataMatch = String(html).match(/\["CurrentUserInitialData",\[\],({.*?}),\d+\]/);
           if (userDataMatch) {
             const info = JSON.parse(userDataMatch[1]);
-            logger(`Đăng nhập tài khoản: ${info.NAME} (${info.USER_ID})`, "info");
+            logger(`Login at: ${info.NAME} - ${info.USER_ID}`, "info");
           } else if (userID) {
             logger(`ID người dùng: ${userID}`, "info");
           }
@@ -819,7 +817,7 @@ function loginHelper(appState, Cookie, email, password, globalOptions, callback)
         const tokenMatch = html.match(/DTSGInitialData.*?token":"(.*?)"/);
         if (tokenMatch) fb_dtsg = tokenMatch[1];
         try {
-          if (userID) await backupAppStateSQL(jar, userID);
+          // if (userID) await backupAppStateSQL(jar, userID);
         } catch { }
         Promise.resolve()
           .then(function () {
@@ -909,7 +907,7 @@ function loginHelper(appState, Cookie, email, password, globalOptions, callback)
             loaded++;
           });
         });
-        logger(`Loaded ${loaded} FCA API methods${skipped ? `, skipped ${skipped} duplicates` : ""}`);
+        logger(`METHOD: ${loaded}mdl${skipped ? `, skipped ${skipped} duplicates` : ""}`);
         if (api.listenMqtt) api.listen = api.listenMqtt;
         if (api.refreshFb_dtsg) {
           setInterval(function () {
@@ -920,7 +918,6 @@ function loginHelper(appState, Cookie, email, password, globalOptions, callback)
             });
           }, 86400000);
         }
-        logger("Login successful!");
         callback(null, api);
       })
       .catch(function (e) {
