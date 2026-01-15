@@ -549,50 +549,6 @@ For detailed API documentation, see [DOCS.md](./DOCS.md)
 
 ---
 
-## 🛠️ Projects Using This API
-
-Here are some awesome projects built with `@bugdev/httpfca`:
-
-| Project | Description |
-|---------|-------------|
-| **[c3c](https://github.com/lequanglam/c3c)** | Customizable bot with plugins, supports Facebook & Discord |
-| **[Miraiv2](https://github.com/miraiPr0ject/miraiv2)** | Simple Facebook Messenger Bot |
-| **[Messer](https://github.com/mjkaufer/Messer)** | Command-line messaging for Facebook Messenger |
-| **[messen](https://github.com/tomquirk/messen)** | Rapidly build Facebook Messenger apps in Node.js |
-| **[Concierge](https://github.com/concierge/Concierge)** | Highly modular chat bot with built-in package manager |
-| **[Marc Zuckerbot](https://github.com/bsansouci/marc-zuckerbot)** | Facebook chat bot |
-| **[Botyo](https://github.com/ivkos/botyo)** | Modular bot for group chat rooms |
-| **[matrix-puppet-facebook](https://github.com/matrix-hacks/matrix-puppet-facebook)** | Facebook bridge for Matrix |
-| **[Miscord](https://github.com/Bjornskjald/miscord)** | Easy-to-use Facebook bridge for Discord |
-| **[chat-bridge](https://github.com/rexx0520/chat-bridge)** | Messenger, Telegram and IRC chat bridge |
-| **[Botium](https://github.com/codeforequity-at/botium-core)** | The Selenium for Chatbots |
-| **[Messenger-CLI](https://github.com/AstroCB/Messenger-CLI)** | Command-line interface for Facebook Messenger |
-| **[BotCore](https://github.com/AstroCB/BotCore)** | Tools for writing and managing Facebook Messenger bots |
-
-[See more projects...](https://github.com/haonguyenbugs/httpfca#projects-using-this-api)
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! We love your input 💙
-
-**How to contribute:**
-
-1. 🍴 Fork the repository
-2. 🌿 Create a new branch (`git checkout -b feature/AmazingFeature`)
-3. 💾 Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. 📤 Push to the branch (`git push origin feature/AmazingFeature`)
-5. 🔄 Open a Pull Request
-
-**Guidelines:**
-- Follow the existing code style
-- Add tests for new features
-- Update documentation as needed
-- Be respectful and constructive
-
----
-
 ## 📄 License
 
 This project is licensed under the **MIT License** - see the [LICENSE-MIT](./LICENSE-MIT) file for details.
@@ -603,30 +559,16 @@ This project is licensed under the **MIT License** - see the [LICENSE-MIT](./LIC
 
 <div align="center">
 
-**Made with ❤️ by bugdev**
+**Tran Hao Nguyenn Devoloper**
 
 [![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/nguyenjustasimpledev/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Donix-VN)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/haonguyenbugs)
 
 </div>
 
-### 🔗 Links
+<!-- ### 🔗 Links
 
 - 📦 [NPM Package](https://www.npmjs.com/package/@bugdev/httpfca)
 - 🐙 [GitHub Repository](https://github.com/haonguyenbugs/httpfca)
 - 🐛 [Issue Tracker](https://github.com/haonguyenbugs/httpfca/issues)
-- 📖 [Documentation](./DOCS.md)
-
-### ⭐ Support
-
-If this project is helpful, please give it a ⭐ on GitHub!
-
----
-
-<div align="center">
-
-**⚠️ Disclaimer:** This is an unofficial API and is not officially supported by Facebook. Use responsibly and comply with [Facebook Terms of Service](https://www.facebook.com/terms.php).
-
-Made with ❤️ for the developer community
-
-</div>
+- 📖 [Documentation](./DOCS.md) -->
