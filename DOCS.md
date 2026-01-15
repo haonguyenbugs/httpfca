@@ -2,12 +2,12 @@
 
 ## Introduction
 
-**@bugdev/httpfca** is an unofficial Node.js library for interacting with Facebook Messenger by emulating browser behavior. This library allows you to create chat bots and automate tasks on Facebook Messenger.
+**@haonguyendevgroup/httpfca** is an unofficial Node.js library for interacting with Facebook Messenger by emulating browser behavior. This library allows you to create chat bots and automate tasks on Facebook Messenger.
 
 ## Installation
 
 ```bash
-npm install @bugdev/httpfca@latest
+npm install @haonguyendevgroup/httpfca@latest
 ```
 
 ---
@@ -17,7 +17,7 @@ npm install @bugdev/httpfca@latest
 ### 1.1. Login with Email & Password
 
 ```javascript
-const login = require("@bugdev/httpfca");
+const login = require("@haonguyendevgroup/httpfca");
 
 const credentials = {
     email: "your_email@example.com",
@@ -38,7 +38,7 @@ login(credentials, (err, api) => {
 When your account has 2FA enabled, you need to provide the 2FA code:
 
 ```javascript
-const login = require("@bugdev/httpfca");
+const login = require("@haonguyendevgroup/httpfca");
 const readline = require("readline");
 
 const rl = readline.createInterface({
@@ -79,7 +79,7 @@ AppState is saved cookies and session data. Login with AppState helps avoid ente
 
 ```javascript
 const fs = require("fs");
-const login = require("@bugdev/httpfca");
+const login = require("@haonguyendevgroup/httpfca");
 
 const credentials = {
     email: "your_email@example.com",
@@ -107,7 +107,7 @@ login(credentials, (err, api) => {
 
 ```javascript
 const fs = require("fs");
-const login = require("@bugdev/httpfca");
+const login = require("@haonguyendevgroup/httpfca");
 
 const credentials = {
     appState: JSON.parse(fs.readFileSync("appstate.json", "utf8"))
@@ -535,7 +535,7 @@ api.removeMiddleware(myMiddleware);
 
 **9. Complete Example - Bot with Multiple Middleware:**
 ```javascript
-const login = require("@bugdev/httpfca");
+const login = require("@haonguyendevgroup/httpfca");
 
 login({ appState: [] }, (err, api) => {
     if (err) return console.error(err);
@@ -768,7 +768,7 @@ if (scheduled) {
 
 **8. Complete example - Reminder bot:**
 ```javascript
-const login = require("@bugdev/httpfca");
+const login = require("@haonguyendevgroup/httpfca");
 
 login({ appState: [] }, (err, api) => {
     if (err) return console.error(err);
@@ -833,7 +833,7 @@ disable();
 
 **1. Basic auto-save:**
 ```javascript
-const login = require("@bugdev/httpfca");
+const login = require("@haonguyendevgroup/httpfca");
 
 login({ appState: [] }, (err, api) => {
     if (err) return console.error(err);
@@ -868,7 +868,7 @@ const disable = api.enableAutoSaveAppState({
 **4. Complete example:**
 ```javascript
 const fs = require("fs");
-const login = require("@bugdev/httpfca");
+const login = require("@haonguyendevgroup/httpfca");
 
 // Try to load existing AppState
 let appState = [];
@@ -1808,7 +1808,7 @@ api.createNewGroup(members, groupName, (err, threadID) => {
 
 ```javascript
 const fs = require("fs");
-const login = require("@bugdev/httpfca");
+const login = require("@haonguyendevgroup/httpfca");
 
 // Login
 login(
@@ -1855,7 +1855,7 @@ login(
 
 ```javascript
 const fs = require("fs");
-const login = require("@bugdev/httpfca");
+const login = require("@haonguyendevgroup/httpfca");
 
 // Admin list (User IDs)
 const ADMINS = ["100012345678901", "100012345678902"];
@@ -1980,7 +1980,7 @@ login(
 
 ```javascript
 const fs = require("fs");
-const login = require("@bugdev/httpfca");
+const login = require("@haonguyendevgroup/httpfca");
 
 // Store chat history by threadID
 const chatHistory = {};
@@ -2065,7 +2065,7 @@ login(
 
 ```javascript
 const fs = require("fs");
-const login = require("@bugdev/httpfca");
+const login = require("@haonguyendevgroup/httpfca");
 
 // Auto-reply dictionary
 const autoReplies = {
@@ -2128,7 +2128,7 @@ login(
 
 ```javascript
 const fs = require("fs");
-const login = require("@bugdev/httpfca");
+const login = require("@haonguyendevgroup/httpfca");
 
 // Command prefix
 const PREFIX = "/";
@@ -2501,7 +2501,7 @@ api.listenMqtt((err, event) => {
 
 ```javascript
 const fs = require("fs");
-const login = require("@bugdev/httpfca");
+const login = require("@haonguyendevgroup/httpfca");
 
 class BotManager {
     constructor() {
@@ -2623,7 +2623,7 @@ Last seen: ${row.last_interaction}
 ## 9. RESOURCES
 
 - **GitHub Repository**: https://github.com/haonguyenbugs/httpfca
-- **NPM Package**: @bugdev/httpfca
+- **NPM Package**: @haonguyendevgroup/httpfca
 - **AppState Tool**: https://github.com/c3cbot/c3c-fbstate
 - **Facebook Developer Docs**: https://developers.facebook.com/docs/messenger-platform
 
@@ -2631,6 +2631,6 @@ Last seen: ${row.last_interaction}
 
 ## Conclusion
 
-This is a comprehensive documentation for **@bugdev/httpfca** API methods. This library is very powerful but should be used carefully to avoid violating Facebook's policies and getting your account banned.
+This is a comprehensive documentation for **@haonguyendevgroup/httpfca** API methods. This library is very powerful but should be used carefully to avoid violating Facebook's policies and getting your account banned.
 
 **Happy bot coding! 🚀**

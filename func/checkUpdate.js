@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const { exec } = require("child_process");
 const https = require("https");
-const pkgName = "@bugdev/httpfca";
+const pkgName = "@haonguyendevgroup/httpfca";
 
 let axios = null;
 try {

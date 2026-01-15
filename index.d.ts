@@ -1,4 +1,4 @@
-﻿declare module '@bugdev/httpfca' {
+﻿declare module '@haonguyendevgroup/httpfca' {
   import type EventEmitter from "events";
   import type { Duplex, Readable, Transform } from "stream";
 

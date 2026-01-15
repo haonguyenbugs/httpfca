@@ -1,11 +1,11 @@
 <div align="center">
 
-# 💬 @bugdev/httpfca
+# 💬 @haonguyendevgroup/httpfca
 
 **Unofficial Facebook Chat API for Node.js** - Interact with Facebook Messenger programmatically
 
-[![npm version](https://img.shields.io/npm/v/@bugdev/httpfca.svg?style=for-the-badge)](https://www.npmjs.com/package/@bugdev/httpfca)
-[![npm downloads](https://img.shields.io/npm/dm/@bugdev/httpfca.svg?style=for-the-badge)](https://www.npmjs.com/package/@bugdev/httpfca)
+[![npm version](https://img.shields.io/npm/v/@haonguyendevgroup/httpfca.svg?style=for-the-badge)](https://www.npmjs.com/package/@haonguyendevgroup/httpfca)
+[![npm downloads](https://img.shields.io/npm/dm/@haonguyendevgroup/httpfca.svg?style=for-the-badge)](https://www.npmjs.com/package/@haonguyendevgroup/httpfca)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](./LICENSE-MIT)
 [![Node.js](https://img.shields.io/badge/node-%3E%3D12.0.0-brightgreen.svg?style=for-the-badge)](https://nodejs.org/)
 
@@ -51,7 +51,7 @@
 
 **💡 Recommendations:**
 
-- Use **Firefox browser** or visit [fca.bugdev.id.vn](https://fca.bugdev.id.vn) to reduce logout issues (especially for iOS users)
+- Use **Firefox browser** or visit [fca.haonguyendevgroup.id.vn](https://fca.haonguyendevgroup.id.vn) to reduce logout issues (especially for iOS users)
 - Use **AppState** instead of credentials when possible
 - Implement **rate limiting** in your bots
 - Follow Facebook's Terms of Service
@@ -76,7 +76,7 @@
 
 Facebook provides an [official API for chat bots](https://developers.facebook.com/docs/messenger-platform), but it's **only available for Facebook Pages**.
 
-`@bugdev/httpfca` is the **only API** that allows you to automate chat functionalities on a **user account** by emulating the browser. This means:
+`@haonguyendevgroup/httpfca` is the **only API** that allows you to automate chat functionalities on a **user account** by emulating the browser. This means:
 
 - 🔄 Making the exact same GET/POST requests as a browser
 - 🔐 Does not work with auth tokens
@@ -94,7 +94,7 @@ Facebook provides an [official API for chat bots](https://developers.facebook.co
 ## 📦 Installation
 
 ```bash
-npm install @bugdev/httpfca@latest
+npm install @haonguyendevgroup/httpfca@latest
 ```
 
 **Requirements:**
@@ -108,7 +108,7 @@ npm install @bugdev/httpfca@latest
 ### 1️⃣ Login and Simple Echo Bot
 
 ```javascript
-const login = require("@bugdev/httpfca");
+const login = require("@haonguyendevgroup/httpfca");
 
 login({ appState: [] }, (err, api) => {
     if (err) return console.error(err);
@@ -125,7 +125,7 @@ login({ appState: [] }, (err, api) => {
 ### 2️⃣ Send Text Message
 
 ```javascript
-const login = require("@bugdev/httpfca");
+const login = require("@haonguyendevgroup/httpfca");
 
 login({ appState: [] }, (err, api) => {
     if (err) {
@@ -148,7 +148,7 @@ login({ appState: [] }, (err, api) => {
 ### 3️⃣ Send File/Image
 
 ```javascript
-const login = require("@bugdev/httpfca");
+const login = require("@haonguyendevgroup/httpfca");
 const fs = require("fs");
 
 login({ appState: [] }, (err, api) => {
@@ -204,7 +204,7 @@ Save your login session to avoid re-authentication:
 
 ```javascript
 const fs = require("fs");
-const login = require("@bugdev/httpfca");
+const login = require("@haonguyendevgroup/httpfca");
 
 const credentials = { appState: [] };
 
@@ -230,7 +230,7 @@ Load your saved AppState for faster login:
 
 ```javascript
 const fs = require("fs");
-const login = require("@bugdev/httpfca");
+const login = require("@haonguyendevgroup/httpfca");
 
 login(
     { appState: JSON.parse(fs.readFileSync("appstate.json", "utf8")) },
@@ -256,7 +256,7 @@ login(
 
 ```javascript
 const fs = require("fs");
-const login = require("@bugdev/httpfca");
+const login = require("@haonguyendevgroup/httpfca");
 
 login(
     { appState: JSON.parse(fs.readFileSync("appstate.json", "utf8")) },
@@ -568,7 +568,7 @@ This project is licensed under the **MIT License** - see the [LICENSE-MIT](./LIC
 
 <!-- ### 🔗 Links
 
-- 📦 [NPM Package](https://www.npmjs.com/package/@bugdev/httpfca)
+- 📦 [NPM Package](https://www.npmjs.com/package/@haonguyendevgroup/httpfca)
 - 🐙 [GitHub Repository](https://github.com/haonguyenbugs/httpfca)
 - 🐛 [Issue Tracker](https://github.com/haonguyenbugs/httpfca/issues)
 - 📖 [Documentation](./DOCS.md) -->

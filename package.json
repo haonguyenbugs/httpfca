@@ -1,5 +1,5 @@
 {
-  "name": "@bugdev/httpfca",
+  "name": "@haonguyendevgroup/httpfca",
   "version": "1.0.1",
   "description": "Unofficial Facebook Chat API for Node.js - Interact with Facebook Messenger programmatically",
   "main": "index.js",
@@ -34,14 +34,11 @@
     "nodejs",
     "fca"
   ],
-  "author": {
-    "name": "bugdev",
-    "url": "https://www.facebook.com/nguyenjustasimpledev/"
-  },
+  "author": "haonguyendevgroup (https://www.facebook.com/nguyenjustasimpledev/)",
   "contributors": [
     {
-      "name": "bugdev",
-      "url": "https://github.com/Donix-VN"
+      "name": "haonguyendevgroup",
+      "url": "https://github.com/haonguyenbugs"
     }
   ],
   "license": "MIT",
