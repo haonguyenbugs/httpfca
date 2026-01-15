@@ -208,7 +208,7 @@
     };
 
     // Auto-save AppState
-    enableAutoSaveAppState: (options?: { filePath?: string; interval?: number; saveOnLogin?: boolean }) => () => void;
+    // enableAutoSaveAppState: (options?: { filePath?: string; interval?: number; saveOnLogin?: boolean }) => () => void;
   };
 
   // ============================================================================
