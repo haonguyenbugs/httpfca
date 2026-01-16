@@ -1,7 +1,7 @@
 const { Sequelize } = require("sequelize");
 const fs = require("fs");
 const path = require("path");
-const databasePath = path.join(process.cwd(), "FDatabase");
+const databasePath = path.join(process.cwd(), "assets/database");
 if (!fs.existsSync(databasePath)) {
   fs.mkdirSync(databasePath, { recursive: true });
 }
