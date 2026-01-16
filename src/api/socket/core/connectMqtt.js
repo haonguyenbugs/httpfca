@@ -230,7 +230,7 @@ module.exports = function createListenMqtt(deps) {
         }
       } catch (ex) {
         const errMsg = ex && ex.message ? ex.message : String(ex || "Unknown error");
-        logger(`mqtt message handler error: ${errMsg}`, "error");
+        // logger(`mqtt message handler error: ${errMsg}`, "error");
         // Don't crash on message parsing errors, just log and continue
       }
     });
